@@ -1,0 +1,16 @@
+.title {
+    &__container {
+        display: flex;
+        justify-content: center;
+        padding: 54px 0;
+    }
+
+    &__heading {
+        font-family: Cormorant Garamond; // here
+        font-size: 72px;
+        margin: 0;
+        font-weight: 400;
+        letter-spacing: -0.025em;
+        text-transform: uppercase;
+    }
+}

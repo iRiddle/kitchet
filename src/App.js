@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import ContainerLayout from './layouts/ContainerLayout'
+
+import Catalog from './containers/Catalog'
+import Settings from './containers/Settings'
+
+import PrimaryHeader from './components/PrimaryHeader'
+import Header from './components/Header'
+import Title from './components/Title'
+
+import { titles, kitchens, sizes, settingsSelect } from './data'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ContainerLayout colorStyle='grey'>
+        <PrimaryHeader titles={titles} />
+      </ContainerLayout>
+      <ContainerLayout colorStyle='white'>
+        <Header />
+      </ContainerLayout>
+      <ContainerLayout colorStyle='grey'>
+        <Title />
+      </ContainerLayout>
+      <ContainerLayout colorStyle='white'>
+        <Settings settingsSelect={settingsSelect} />
+      </ContainerLayout>
+      <ContainerLayout colorStyle='grey'>
+        <Catalog kitchens={kitchens} sizes={sizes} />
+      </ContainerLayout>
+    </>
   );
 }
 

@@ -1,0 +1,14 @@
+.layout {
+    &__container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    &--grey {
+        background-color: rgba(240, 240, 240, 0.88);
+    }
+
+    &--layout--white {
+        background-color: #FFFFFF;
+    }
+}

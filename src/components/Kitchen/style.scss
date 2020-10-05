@@ -1,0 +1,138 @@
+.kitchen {
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__more-description-overlay {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 588px;
+        width: 490px;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(250, 250, 250, 0.5);
+    }
+
+    &__more-description {
+        margin-bottom: 42px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__more-description-calc {
+        position: absolute;
+        top: 24px;
+        right: 20px;
+        cursor: pointer;
+        background-color: initial;
+        border: 1px solid #292929;
+        padding: 8px 9px;
+        transition: 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.4s;
+        }
+    }
+
+    &__more-description-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        padding: 84px 36px 36px 36px;
+    }
+
+    &__more-description-title {
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.105em;
+        color: #323232;
+        font-size: 18px;
+    }
+
+    &__more-description-paragraph {
+        letter-spacing: 0.035em;
+        color: #585858;
+        font-size: 14px;
+        line-height: 140%;
+        margin: 6px 0 0 0;
+    }
+
+    &__more-description-btn {
+        background-color: #FF3D00;
+        border: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 0.105em;
+        color: #fff;
+        padding: 21px 0;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: rgb(235, 55, 0);
+            transition: 0.4s;
+        }
+    }
+
+    &__state {
+        position: absolute;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 12px 24px;
+
+        &--sale {
+            background-color: #FF9900;
+        }
+
+        &--hit {
+            background-color: #FF3D00;
+        }
+
+        &--new {
+            background-color: #F5EEE4;
+            color: #323232;
+        }
+
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &:hover {
+            .kitchen__more-description-overlay {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__title-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__short-description {
+        margin: 4px 0 0 0;
+    }
+
+
+}

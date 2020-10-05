@@ -1,0 +1,44 @@
+.select {
+    cursor: pointer;
+
+    width: 100px;
+
+    &__option {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        color: #AEAEAE;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 12px;
+        margin: 15px 0;
+    }
+
+    .css-1wa3eu0-placeholder {
+        color: #151515;
+    }
+
+    &__option--active {
+        color: #323232
+    }
+
+    .css-yk16xz-control {
+        border: none;
+    }
+
+    .css-1okebmr-indicatorSeparator {
+        display: none;
+    }
+
+
+    .css-4ljt47-MenuList {
+        background-color: #FAFAFA;
+        padding: 0 10px;
+    }
+
+    &--isColored {
+        .css-1wa3eu0-placeholder {
+            color: #FF3D00;
+        }
+    }
+}

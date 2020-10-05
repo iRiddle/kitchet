@@ -1,0 +1,51 @@
+.primary-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__left-side,
+    &__right-side {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    &__elem {
+        display: flex;
+        align-items: center;
+        margin-right: 35px;
+
+        &:first-child {
+            &::before {
+                content: "\A";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #FF3D00;
+                margin-right: 12px;
+            }
+        }
+    }
+
+    &__link {
+        color: #333333;
+    }
+
+    &__link--gap {
+        margin-right: 92px;
+    }
+
+    &__call-container {
+        cursor: pointer;
+
+        span{
+            margin-right: 36px;
+        }
+    }
+
+    &__call-btn {
+        border: 0px;
+        cursor: pointer;
+    }
+}

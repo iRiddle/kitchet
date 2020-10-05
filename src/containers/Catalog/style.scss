@@ -1,0 +1,16 @@
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__kitchen {
+        margin-bottom: 80px;
+    }
+
+    &__sizes-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 15px 0 44px 0;
+    }
+}

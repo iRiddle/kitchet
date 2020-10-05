@@ -1,0 +1,30 @@
+.header {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 0;
+    }
+
+    &__catalog-btn,
+    &__calculate-btn {
+        border: 0;
+        background-color: initial;
+        cursor: pointer;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+    }
+
+    &__catalog-btn {
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url('../../img/icons/burger.svg');
+        }
+    }
+
+    &__calculate-btn {
+        border-bottom: 1px solid rgba(21, 21, 21, 0.22);
+    }
+}

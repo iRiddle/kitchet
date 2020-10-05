@@ -1,8 +1,11 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'react-input-range/lib/css/index.css'
+import 'normalize.css'
 
 ReactDOM.render(
   <React.StrictMode>
